@@ -12,11 +12,6 @@ api_hash="872ada32b34a2cd7a0f951f31107caa7"
 client = TelegramClient('anon', api_id, api_hash)
 
 
-#client_id = "66776131775c4e4bb9657c25689ccfb9"
-#client_secret = "09b711727ecf4584a9ba49c60edec0c0"
-
-
-
 def get_song():
     token="BQAq6VCN9X8HwdnSao7dTTxgo10pNbwrgHR5RJsO-p9NFXWQ0yNn4Oiw8fi_D7g1JM4VP713tXtq5EZmab_VySjnEYtvy3S7_SYXupN8wW0CVRe6Q4sezYeg5Tk_uqhCvgp66KkTtPqe4rSgFPT2Izv86Cj5r1LjU0erwMEUx7ckc9JTLfqm2zWZKzn3K1DiKTgaJrugRcYr2S5BgDA83KKgy9fmpGEoI-pPs-i3CWDDMZ637zPTtbvJmo8KfIqyjSu0FSO-tU-047HHHU-yiiefBpIO3R-eVYjdas90zbzl7yctxicYWHPXa3IRJjxLAwYeI4ZEZ3sAlse3dEEiRivN"
     source = get(f"https://api.spotify.com/v1/me/player/currently-playing?access_token={token}").json()
