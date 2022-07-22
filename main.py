@@ -13,7 +13,7 @@ client = TelegramClient('anon', api_id, api_hash)
 
 
 def get_song():
-    token="BQAq6VCN9X8HwdnSao7dTTxgo10pNbwrgHR5RJsO-p9NFXWQ0yNn4Oiw8fi_D7g1JM4VP713tXtq5EZmab_VySjnEYtvy3S7_SYXupN8wW0CVRe6Q4sezYeg5Tk_uqhCvgp66KkTtPqe4rSgFPT2Izv86Cj5r1LjU0erwMEUx7ckc9JTLfqm2zWZKzn3K1DiKTgaJrugRcYr2S5BgDA83KKgy9fmpGEoI-pPs-i3CWDDMZ637zPTtbvJmo8KfIqyjSu0FSO-tU-047HHHU-yiiefBpIO3R-eVYjdas90zbzl7yctxicYWHPXa3IRJjxLAwYeI4ZEZ3sAlse3dEEiRivN"
+    token=	"BQBDPTeYcmTPLG_riJ-ydmELSCZjzzX6XNJ-1JF6pTIgAe-4rhKYbtbKMJKEagkCqOHA_JQe98jpvm5cmVKdCVZDJFzHonilidPpvtJUopCpW92hApdVHJzRZfmd5ZXGsGAwoY5LtP7q5Lk_r63veoH6cFvEMWqCnt6TMPzofyYU-09_XCbNznuOfyj1RGMDoKy0MEpgtrPqHBLN3FhEpf-aOASxwmeNj5Y94W-e68ZFjdm8Pp-Ja_p1yCicZ9SNBmDmY3AjJYzmtDU8LVH0Ao25J8t6RimduLKhyz_KzDgXAdxMnDdBajm59d8mCbu3CA064XH8zjvu5L7ZyW03Sw_D"
     source = get(f"https://api.spotify.com/v1/me/player/currently-playing?access_token={token}").json()
     play = source['is_playing']
     if play:
