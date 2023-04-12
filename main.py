@@ -7,13 +7,13 @@ from requests import get
 
 
 
-api_id="15647704"
-api_hash="872ada32b34a2cd7a0f951f31107caa7"
+api_id=""
+api_hash=""
 client = TelegramClient('anon', api_id, api_hash)
 
 
 def get_song():
-    token=	"BQBDPTeYcmTPLG_riJ-ydmELSCZjzzX6XNJ-1JF6pTIgAe-4rhKYbtbKMJKEagkCqOHA_JQe98jpvm5cmVKdCVZDJFzHonilidPpvtJUopCpW92hApdVHJzRZfmd5ZXGsGAwoY5LtP7q5Lk_r63veoH6cFvEMWqCnt6TMPzofyYU-09_XCbNznuOfyj1RGMDoKy0MEpgtrPqHBLN3FhEpf-aOASxwmeNj5Y94W-e68ZFjdm8Pp-Ja_p1yCicZ9SNBmDmY3AjJYzmtDU8LVH0Ao25J8t6RimduLKhyz_KzDgXAdxMnDdBajm59d8mCbu3CA064XH8zjvu5L7ZyW03Sw_D"
+    token=	""
     source = get(f"https://api.spotify.com/v1/me/player/currently-playing?access_token={token}").json()
     play = source['is_playing']
     if play:
@@ -50,7 +50,7 @@ async def main():
         
         except TypeError: 
             await client(UpdateProfileRequest(
-                about="| Professional Retard |"
+                about="| Your current bio |"
             ))
 
         except errors.FloodWaitError as e:
